@@ -11,7 +11,12 @@ export default {
         tertiary: '#57CC99', 
         limez: '#80ED99', 
         lightg: '#C7F9CC'
-      }, 
+      },
+      fontFamily: {
+        arsenica: ["arsenica-variable", 'sans-serif'], 
+        moret: ['moret', 'serif'],
+        eldwin: ['eldwin-script'],
+      },  
     },
   },
   plugins: [],
