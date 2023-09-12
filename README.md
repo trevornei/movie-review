@@ -23,10 +23,12 @@
     - lightg
 
 * Font Stack
-    - h1: 
+    - h1: Eldwin
     - h2: 
-    - h3: 
+    - h3: Arsenica
 
     - h4: 
     - h5: 
     - h6: 
+
+    - p: moret
