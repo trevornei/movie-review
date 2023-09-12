@@ -7,8 +7,8 @@
 export default function App() {
   return (
     <div>
-      <h1 className="text-3xl underline hover:text-cyan-800">Movie</h1>
-      <h1 className="text-3xl underline hover:text-cyan-400">Review</h1>
+      <h1 className="text-3xl underline text-primary hover:text-limez">Movie</h1>
+      <h1 className="text-3xl underline text-tertiary hover:text-cyan-400">Review</h1>
     </div>
   )
 }
