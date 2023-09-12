@@ -1,3 +1,4 @@
+import Nav from './components/nav'
 // export default function App() {
 //   <h1 className="text-3xl font-bold underline hover:text-cyan-800">Movie Review</h1>
 // }
@@ -7,6 +8,7 @@
 export default function App() {
   return (
     <>
+      <Nav></Nav>
       <div className="m-28 p-8 flex flex-col items-center justify-center w-screen h-screen bg-primary">
         <div className="bg-secondary mt-8">
         <div className="flex flex-row m-10 p-10">
