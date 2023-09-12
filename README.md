@@ -15,4 +15,18 @@
 * **ReviewForm**: a form at the bottom of a Movie component that allows users to leave reviews. When submitted, the review should be added to the movie. * * All this data can be *stored in an array*, no networking or database needed for this assignment.
 
 ** Styling Guide **
-* Color Pallete
+* Color Pallete: https://coolors.co/palette/22577a-38a3a5-57cc99-80ed99-c7f9cc
+    - primary
+    - secondary
+    - tertiary
+    - limez
+    - lightg
+
+* Font Stack
+    - h1: 
+    - h2: 
+    - h3: 
+
+    - h4: 
+    - h5: 
+    - h6: 
