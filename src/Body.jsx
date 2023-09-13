@@ -1,8 +1,10 @@
 import React from "react"
-import Movie from "./components/Movie"
+import MovieList from './components/MovieList';
 
 export default function Body() {
-    <div className="w-screen h-screen">
-        <Movie></Movie>
-    </div>
+    return (
+        <div className="w-screen h-screen mx-auto my-16">
+            <MovieList></MovieList>
+        </div>
+    )
 }
