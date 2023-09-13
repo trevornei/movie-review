@@ -1,8 +1,12 @@
 import React from 'react'
+import Logo from '../assets/logo/logo.gif'
 
 export default function Nav() {
     return (
-        <nav className="flex flex-row items-center justify-center w-screen h-24 bg-lightg">
+        <nav className="flex flex-row items-center justify-start w-screen h-24 px-4 bg-lightg">
+            <div className="justify-start">
+                <img src={Logo} className='mt-16 w-2/3' alt="" />
+            </div>
             <div>
                 <ul className="flex flex-row items-center justify-center">
                     <li className="">

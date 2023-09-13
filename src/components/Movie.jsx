@@ -1,4 +1,5 @@
 import React from 'react'
+import Review from './Review.jsx'
 
 // NOTE: Goals
 /*
@@ -18,12 +19,8 @@ export default function Movie() {
     return (
         <div className="row-span-1 col-span-1 bg-tertiary rounded-xl">
             <div className="" id='PosterSynopsis'>
-                <div className="" id="img">
-                    
-                </div>
-                <div className="" id="synopsis">
-
-                </div>
+                
+                <Review></Review>
             </div>
             <div className="" id="reviewForm">
                 <div className="" id="reviews">
@@ -33,6 +30,6 @@ export default function Movie() {
 
                 </div>
             </div>
-        </div>
+        </div> 
     )
 }
