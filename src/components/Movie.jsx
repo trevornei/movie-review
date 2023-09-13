@@ -17,7 +17,7 @@ import Review from './Review.jsx'
 
 export default function Movie() {
     return (
-        <div className="row-span-1 col-span-1 bg-tertiary rounded-xl">
+        <div className="row-span-1 col-span-1 bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300">
             <div className="" id='PosterSynopsis'>
                 
                 <Review></Review>
