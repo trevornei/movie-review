@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav() {
     return (
-        <nav className="flex flex-row items-center justify-center mb-8 w-screen h-24 bg-lightg">
+        <nav className="flex flex-row items-center justify-center w-screen h-24 bg-lightg">
             <div>
                 <ul className="flex flex-row items-center justify-center">
                     <li className="">
