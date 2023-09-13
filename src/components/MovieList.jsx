@@ -5,7 +5,7 @@ import Movie from './Movie'
 
 export default function MovieList () {
     return (
-        <div className="w-full h-auto grid grid-cols-2 grid-rows-3 gap-x-4 gap-y-8 mx-24">
+        <div className="w-auto h-auto grid grid-cols-2 grid-rows-3 gap-x-4 gap-y-8 mx-24">
             <Movie></Movie>
             <Movie></Movie>
             <Movie></Movie>
