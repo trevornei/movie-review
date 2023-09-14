@@ -1,5 +1,6 @@
 import React from 'react'
 import Review from './Review.jsx'
+import ReviewList from './ReviewList.jsx'
 
 // NOTE: Goals
 /*
@@ -15,11 +16,15 @@ import Review from './Review.jsx'
         - Submit Button(onClick) => Review Text!
 */
 
-export default function Movie() {
+export default function Movie({movieInfo}) {
+
+    console.log(movieInfo)
     return (
-        <div className="row-span-1 col-span-1 bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300">
+        <div className="row-span-1 col-span-1 bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300 hover:cursor-cam">
             <div className="" id='PosterSynopsis'>
-                
+
+                <h1>{movieInfo.title}</h1>
+                {/* revioew should go to  your reviewList */}
                 <Review></Review>
             </div>
             <div className="" id="reviewForm">
@@ -29,6 +34,7 @@ export default function Movie() {
                 <div className="" id="form">
 
                 </div>
+               <ReviewList />
             </div>
         </div> 
     )

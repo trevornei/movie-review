@@ -16,6 +16,9 @@ export default {
         arsenica: ["arsenica-variable", 'sans-serif'], 
         moret: ['moret', 'serif'],
         eldwin: ['eldwin-script'],
+      },
+      cursor: {
+        'cam': 'url(src/assets/logo/cursor.svg)',
       },  
     },
   },
