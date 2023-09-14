@@ -16,7 +16,7 @@ export default function MovieList() {
     {
       id: 2,
       title: "A Man Named Otto",
-      img: "",
+      img: "../posters/howlsCastle",
       synopsis: "Otto Anderson is a grump who no longer sees purpose in his life following the loss of his wife. Otto is ready to end it all, but his plans are interrupted when a lively young family moves in next door, and he meets his match in quick-witted Marisol. She challenges him to see life differently, leading to an unlikely friendship that turns his world around. A heartwarming and funny story about love, loss, and life, A Man Called Otto shows that family can sometimes be found in the most unexpected places.",
       reviews: [],
     },
@@ -57,8 +57,8 @@ export default function MovieList() {
     <div className="w-auto h-auto grid grid-cols-2 grid-rows-3 gap-x-12 gap-y-8 mx-24 mb-24 hover:cursor-cam">
         {movies.map((movie,index) => (       
             <div>
-            <Movie key={index} movieInfo = {movie}/>
-            <ReviewForm reviews={movie.reviews}/>
+                <Movie key={index} movieInfo = {movie}/>
+                <ReviewForm reviews={movie.synopsis}/>
             </div> 
         ))}
 {/* 
@@ -78,6 +78,3 @@ export default function MovieList() {
     </div>
   );
 }
-
-
-// addTwoNumbers(5,10)

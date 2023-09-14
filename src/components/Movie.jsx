@@ -22,10 +22,10 @@ export default function Movie({movieInfo}) {
     return (
         <div className="row-span-1 col-span-1 bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300 hover:cursor-cam">
             <div className="" id='PosterSynopsis'>
-
-                <h1>{movieInfo.title}</h1>
+                <img src="" alt="" />
+                <h1 className='text-3xl font-arsenica text-extrabold'>{movieInfo.title}</h1>
+                <p className=""></p>
                 {/* revioew should go to  your reviewList */}
-                <Review></Review>
             </div>
             <div className="" id="reviewForm">
                 <div className="" id="reviews">
