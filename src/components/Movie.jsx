@@ -21,8 +21,8 @@ export default function Movie({movieInfo}) {
     console.log(movieInfo)
     return (
         <div className="row-span-1 col-span-1 bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300 hover:cursor-cam">
-            <div className="" id='PosterSynopsis'>
-                <img src="" alt="" />
+            <div className="flex flex-col" id='PosterSynopsis'>
+                <img src={movieInfo.img} className='rounded-2xl shadow-lg mx-auto w-xs mt-10 mb-4 shadow-black' alt="Movie Poster" />
                 <h1 className='text-3xl font-arsenica text-extrabold'>{movieInfo.title}</h1>
                 <p className=""></p>
                 {/* revioew should go to  your reviewList */}
