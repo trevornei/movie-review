@@ -96,20 +96,6 @@ export default function MovieList() {
                 <Movie movieInfo = {movie}/>
             </div> 
         ))}
-{/* 
-        {Movie(  {
-            movieInfo: movie,
-            coolFact: "basnanas are cool", 
-            year: "1999"
-        }        )}
-*/}
-
-      {/* <Movie/>
-      <Movie/>
-      <Movie/>
-      <Movie/>
-      <Movie/>
-      <Movie/> */}
     </div>
   );
 }
