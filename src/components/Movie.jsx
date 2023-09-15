@@ -17,9 +17,6 @@ import ReviewList from './ReviewList.jsx'
 */
 
 export default function Movie({movieInfo}) {
-
-    // console.log(movieInfo)
-    // console.log(movieInfo.reviews);
     return (
         <div className="row-span-1 col-span-1 h-full bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300 hover:cursor-cam py-8">
             <div className="w-3/4 h-full bg-primary mx-auto rounded-xl py-8">
@@ -30,7 +27,7 @@ export default function Movie({movieInfo}) {
                 </div>
                 <div className="mt-8 bg-secondary w-full h-auto rounded-xl shadow-xl shadow-black" id="reviewForm">
                     <ReviewList reviews={movieInfo.reviews}/>
-                    <ReviewForm/>
+                    <ReviewForm reviews={movieInfo.reviews}/>
                 </div>
             </div>
         </div> 

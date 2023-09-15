@@ -94,7 +94,6 @@ export default function MovieList() {
         {movies.map((movie,index) => (       
             <div key={movie.id}>
                 <Movie movieInfo = {movie}/>
-                <ReviewForm key={movie.reviews.index} reviews={movie.reviews.opinion}/>
             </div> 
         ))}
 {/* 
