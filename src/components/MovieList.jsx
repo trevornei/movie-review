@@ -90,7 +90,7 @@ export default function MovieList() {
 
 
   return (
-    <div className="w-auto h-auto grid grid-cols-2 grid-rows-3 gap-x-12 gap-y-8 mx-24 mb-24 hover:cursor-cam">
+    <div className="w-auto h-auto grid grid-cols-2 grid-rows-3 gap-x-12 gap-y-8 mx-24 mb-24 hover:cursor-cam p-4">
         {movies.map((movie,index) => (       
             <div key={movie.id}>
                 <Movie movieInfo = {movie}/>
