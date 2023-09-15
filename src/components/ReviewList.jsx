@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react"
+import Review from './Review'
 
-export default function ReviewList() {
+export default function ReviewList({reviews}) {
+  
   return (
-    <div>
-        <h1>Review List Component</h1>
-        {/* {reviews.map(review => (
-            <Review/>
-        ))} */}
+    <div className="w-3/4 flex items-center justify-center h-auto bg-primary[.8] mx-auto rounded-xl">
+      {reviews.map((review, index) => (
+        <Review key={index} reviewData={review}/>
+      ))}
     </div>
   )
 }
