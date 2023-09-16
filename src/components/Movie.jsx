@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReviewForm from './ReviewForm'
 import ReviewList from './ReviewList.jsx'
 
@@ -16,7 +16,15 @@ import ReviewList from './ReviewList.jsx'
         - Submit Button(onClick) => Review Text!
 */
 
-export default function Movie({movieInfo}) {
+export default function Movie({ movieInfo}) {
+
+    const [reviews,setReviews] = useState(movieInfo.reviews)
+
+    function addReview (newReview) {
+        setReviews([...reviews, newReview])
+    }
+
+
     return (
         <div className="row-span-1 col-span-1 h-full bg-tertiary rounded-xl shadow-lg hover:shadow-xl hover:shadow-lightg hover:duration-300 hover:cursor-cam py-8">
             <div className="w-3/4 h-full bg-primary mx-auto rounded-xl py-8">
@@ -26,8 +34,8 @@ export default function Movie({movieInfo}) {
                     <p className="font-moret mx-32 text-white text-lg">{movieInfo.synopsis}</p>
                 </div>
                 <div className="mt-8 bg-secondary w-full h-auto rounded-xl shadow-xl shadow-black" id="reviewForm">
-                    <ReviewList reviews={movieInfo.reviews}/>
-                    <ReviewForm reviews={movieInfo.reviews}/>
+                    <ReviewList reviews={reviews}/>
+                    <ReviewForm reviews={reviews} addReview={addReview}/>
                 </div>
             </div>
         </div> 

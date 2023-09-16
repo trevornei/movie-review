@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import Movie from "./Movie";
-import ReviewForm from './ReviewForm'
 
 // NOTE: Fixed heights for grid containers prevents grid containers to expand with the needs of the child elements. Changed height to => h-auto
 
 export default function MovieList() {
+
+  // const addReview = (newReview) => {
+  //   setReviews([...prevReviews, newReview])
+  // }
+
   const movieData = [
     {
       id: 1,
@@ -16,7 +20,12 @@ export default function MovieList() {
           id: 1, 
           name: "Layla Mohamed",
           opinion: "A visual masterpiece, 'Howl's Moving Castle' is a poignant tale that interweaves love, war, and self-discovery. Studio Ghibli's enchanting animation and characters come to life, drawing viewers into a whimsical world that resonates deeply with the young and old alike. It’s a testament to the unparalleled storytelling prowess of Hayao Miyazaki."
-        }
+        },
+        {
+          id: 1, 
+          name: "Trevor Nei",
+          opinion: "An animated masterpiece."
+        }, 
       ],
     },
     {
@@ -88,12 +97,11 @@ export default function MovieList() {
   ];
   const [movies, setMovies] = useState(movieData);
 
-
   return (
     <div className="w-auto h-auto grid grid-cols-2 grid-rows-3 gap-x-12 gap-y-8 mx-24 mb-24 hover:cursor-cam p-4">
         {movies.map((movie,index) => (       
             <div key={movie.id}>
-                <Movie movieInfo = {movie}/>
+                <Movie movieInfo = {movie} />
             </div> 
         ))}
     </div>
